@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="UserFrame">
+		<title>数据库查询</title>
+		<size>800,600</size>
+		<pos_arg>1</pos_arg>
+		<size_arg>1</size_arg>
+		<object class="wxCheckBox" name="ID_CHECKBOX1" variable="cbx_id" member="yes">
+			<label>学号</label>
+			<pos>48,96</pos>
+			<handler function="Oncbx_idClick" entry="EVT_CHECKBOX" />
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX2" variable="cbx_name" member="yes">
+			<label>姓名</label>
+			<pos>48,152</pos>
+			<handler function="Oncbx_nameClick" entry="EVT_CHECKBOX" />
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="sle_id" member="yes">
+			<pos>128,88</pos>
+			<handler function="Onsle_idText" entry="EVT_TEXT" />
+			<handler function="Onsle_idTextEnter" entry="EVT_TEXT_ENTER" />
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="sle_name" member="yes">
+			<pos>128,144</pos>
+			<handler function="Onsle_nameText" entry="EVT_TEXT" />
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX3" variable="cbx_agest" member="yes">
+			<label>年龄自</label>
+			<pos>48,208</pos>
+			<handler function="Oncbx_agestClick" entry="EVT_CHECKBOX" />
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL3" variable="sle_agest" member="yes">
+			<pos>128,200</pos>
+			<handler function="Onsle_agestText" entry="EVT_TEXT" />
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+			<label>到</label>
+			<pos>256,208</pos>
+			<size>33,26</size>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL4" variable="sle_ageed" member="yes">
+			<pos>320,200</pos>
+			<handler function="Onsle_ageedText" entry="EVT_TEXT" />
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX4" variable="cbx_sex" member="yes">
+			<label>性别</label>
+			<pos>48,264</pos>
+			<handler function="Oncbx_sexClick" entry="EVT_CHECKBOX" />
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL5" variable="sle_sex" member="yes">
+			<pos>128,256</pos>
+			<handler function="Onsle_sexText" entry="EVT_TEXT" />
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX5" variable="cbx_dept" member="yes">
+			<label>系别</label>
+			<pos>440,96</pos>
+			<handler function="Oncbx_deptClick" entry="EVT_CHECKBOX" />
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL6" variable="sle_dept" member="yes">
+			<pos>528,88</pos>
+			<handler function="Onsle_deptText" entry="EVT_TEXT" />
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX6" variable="cbx_class" member="yes">
+			<label>班级</label>
+			<pos>440,152</pos>
+			<handler function="Oncbx_classClick" entry="EVT_CHECKBOX" />
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL7" variable="sle_class" member="yes">
+			<pos>528,144</pos>
+			<handler function="Onsle_classText" entry="EVT_TEXT" />
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX7" variable="cbx_addr" member="yes">
+			<label>地址</label>
+			<pos>440,208</pos>
+			<handler function="Oncbx_addrClick" entry="EVT_CHECKBOX" />
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL8" variable="sle_addr" member="yes">
+			<pos>528,200</pos>
+			<handler function="Onsle_addrText" entry="EVT_TEXT" />
+		</object>
+		<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+			<label>查询</label>
+			<pos>664,144</pos>
+			<handler function="OnButton1Click" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL9" variable="TextCtrl1" member="yes">
+			<pos>48,320</pos>
+			<size>712,96</size>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL10" variable="TextCtrl2" member="yes">
+			<pos>48,456</pos>
+			<size>712,128</size>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+			<label>SQL语句</label>
+			<pos>48,304</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+			<label>查询结果</label>
+			<pos>48,440</pos>
+		</object>
+	</object>
+</wxsmith>
